@@ -1,0 +1,20 @@
+War
+- 52 cards, divide amongst two cards
+- each player flips a card
+ - the player with the higher card takes both cards
+ - if the cards match
+  - each player seperates three cards (or as many as they have remaining if they have three or less)
+  - the top card after those three is then drawn and the player with the higher card takes all of the cards
+  - if there is a tie, the "war" process is repeated
+- the game is won when one player has all of the cards
+
+Objects Needed
+- Card class
+- Deck class
+- Player class
+- Game class
+
+
+A game has players
+A player has a Deck
+A deck has cards

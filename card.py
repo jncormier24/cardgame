@@ -1,8 +1,11 @@
-class Card: 
+class Card:
+    """
+    create the card class
+    """
     suits = (
-        'Hearts', 
-        'Diamonds', 
-        'Spades', 
+        'Hearts',
+        'Diamonds',
+        'Spades',
         'Clubs'
     )
     ranks = (
@@ -34,12 +37,19 @@ class Card:
         'Queen': 12,
         'King': 13,
         'Ace': 14
-    }  
+    }
+
     def __init__(self, suit, rank):
-        
+        """
+        initialize the card class
+        """
         self.suit = suit
         self.rank = rank
         self.value = self.values[rank]
-        
+
     def __str__(self):
-        return self.rank + " of " + self.suit 
+        """
+        stringify the card class data
+        """
+        return self.rank + " of " + self.suit
+    

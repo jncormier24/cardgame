@@ -1,11 +1,21 @@
-class Deck():
+import random
+import card
+
+class Deck:
     
-    def __init__(self, cards):
-        self.cards = cards
+    def __init__(self):
+        self.all_cards = []
         
-    def drawCard(self):
-        topcard = self.cards.pop()
-        return topcard
+        for suit in card.Card.suits:
+            for rank in card.Card.ranks:
+                self.all_cards.append(card.Card(suit, rank))
+        
+    def draw_card(self):
+        return self.all_cards.pop()
+    
+    def shuffle(self):
+        random.shuffle(self.all_cards)
 
     def __len__(self):
-        return len(self.cards)
+        return len(self.all_cards)
+    
